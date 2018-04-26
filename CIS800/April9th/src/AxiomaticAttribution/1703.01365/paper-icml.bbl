@@ -1,0 +1,211 @@
+\begin{thebibliography}{30}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Aumann \& Shapley(1974)Aumann and Shapley]{AS74}
+Aumann, R.~J. and Shapley, L.~S.
+\newblock \emph{Values of Non-Atomic Games}.
+\newblock Princeton University Press, Princeton, NJ, 1974.
+
+\bibitem[Baehrens et~al.(2010)Baehrens, Schroeter, Harmeling, Kawanabe, Hansen,
+  and M{\"u}ller]{BSHKHM10}
+Baehrens, David, Schroeter, Timon, Harmeling, Stefan, Kawanabe, Motoaki,
+  Hansen, Katja, and M{\"u}ller, Klaus-Robert.
+\newblock How to explain individual classification decisions.
+\newblock \emph{Journal of Machine Learning Research}, pp.\  1803--1831, 2010.
+
+\bibitem[Bahdanau et~al.(2014)Bahdanau, Cho, and Bengio]{BahdanauCB14}
+Bahdanau, Dzmitry, Cho, Kyunghyun, and Bengio, Yoshua.
+\newblock Neural machine translation by jointly learning to align and
+  translate.
+\newblock \emph{CoRR}, abs/1409.0473, 2014.
+\newblock URL \url{http://arxiv.org/abs/1409.0473}.
+
+\bibitem[Binder et~al.(2016)Binder, Montavon, Bach, M{\"u}ller, and
+  Samek]{BMBMS16}
+Binder, Alexander, Montavon, Gr{\'e}goire, Bach, Sebastian, M{\"u}ller,
+  Klaus-Robert, and Samek, Wojciech.
+\newblock Layer-wise relevance propagation for neural networks with local
+  renormalization layers.
+\newblock \emph{CoRR}, 2016.
+
+\bibitem[Datta et~al.(2016)Datta, Sen, and Zick]{DSZ16}
+Datta, A., Sen, S., and Zick, Y.
+\newblock Algorithmic transparency via quantitative input influence: Theory and
+  experiments with learning systems.
+\newblock In \emph{2016 IEEE Symposium on Security and Privacy (SP)}, pp.\
+  598--617, 2016.
+
+\bibitem[Dosovitskiy \& Brox(2015)Dosovitskiy and Brox]{DB15}
+Dosovitskiy, Alexey and Brox, Thomas.
+\newblock Inverting visual representations with convolutional networks, 2015.
+
+\bibitem[Erhan et~al.(2009)Erhan, Bengio, Courville, and Vincent]{EBCV09}
+Erhan, Dumitru, Bengio, Yoshua, Courville, Aaron, and Vincent, Pascal.
+\newblock Visualizing higher-layer features of a deep network.
+\newblock Technical Report 1341, University of Montreal, 2009.
+
+\bibitem[Friedman(2004)]{Friedman}
+Friedman, Eric~J.
+\newblock Paths and consistency in additive cost sharing.
+\newblock \emph{International Journal of Game Theory}, 32\penalty0
+  (4):\penalty0 501--518, 2004.
+
+\bibitem[Goodfellow et~al.(2015)Goodfellow, Shlens, and Szegedy]{adversarial}
+Goodfellow, Ian, Shlens, Jonathon, and Szegedy, Christian.
+\newblock Explaining and harnessing adversarial examples.
+\newblock In \emph{International Conference on Learning Representations}, 2015.
+\newblock URL \url{http://arxiv.org/abs/1412.6572}.
+
+\bibitem[Gulshan et~al.(2016)Gulshan, Peng, Coram, and et~al]{jama-dr}
+Gulshan, Varun, Peng, Lily, Coram, Marc, and et~al.
+\newblock Development and validation of a deep learning algorithm for detection
+  of diabetic retinopathy in retinal fundus photographs.
+\newblock \emph{JAMA}, 316\penalty0 (22):\penalty0 2402--2410, 2016.
+
+\bibitem[Kearnes et~al.(2016)Kearnes, McCloskey, Berndl, Pande, and
+  Riley]{KMBPR16}
+Kearnes, Steven, McCloskey, Kevin, Berndl, Marc, Pande, Vijay, and Riley,
+  Patrick.
+\newblock Molecular graph convolutions: moving beyond fingerprints.
+\newblock \emph{Journal of Computer-Aided Molecular Design}, pp.\  595--608,
+  2016.
+
+\bibitem[Kim(2014)]{K14}
+Kim, Yoon.
+\newblock Convolutional neural networks for sentence classification.
+\newblock In \emph{ACL}, 2014.
+
+\bibitem[Le(2013)]{QVL13}
+Le, Quoc~V.
+\newblock Building high-level features using large scale unsupervised learning.
+\newblock In \emph{International Conference on Acoustics, Speech, and Signal
+  Processing (ICASSP)}, pp.\  8595--8598, 2013.
+
+\bibitem[Liang(2016)]{L16}
+Liang, Percy.
+\newblock Learning executable semantic parsers for natural language
+  understanding.
+\newblock \emph{Commun. ACM}, 59\penalty0 (9):\penalty0 68--76, 2016.
+
+\bibitem[Lundberg \& Lee(2016)Lundberg and Lee]{LundbergL16}
+Lundberg, Scott and Lee, Su{-}In.
+\newblock An unexpected unity among methods for interpreting model predictions.
+\newblock \emph{CoRR}, abs/1611.07478, 2016.
+\newblock URL \url{http://arxiv.org/abs/1611.07478}.
+
+\bibitem[Mahendran \& Vedaldi(2015)Mahendran and Vedaldi]{MV15}
+Mahendran, Aravindh and Vedaldi, Andrea.
+\newblock Understanding deep image representations by inverting them.
+\newblock In \emph{Conference on Computer Vision and Pattern Recognition
+  (CVPR)}, pp.\  5188--5196, 2015.
+
+\bibitem[Pasupat \& Liang(2015)Pasupat and Liang]{PL15}
+Pasupat, Panupong and Liang, Percy.
+\newblock Compositional semantic parsing on semi-structured tables.
+\newblock In \emph{ACL}, 2015.
+
+\bibitem[Ribeiro et~al.(2016{\natexlab{a}})Ribeiro, Singh, and
+  Guestrin]{RSG16a}
+Ribeiro, Marco~T{\'u}lio, Singh, Sameer, and Guestrin, Carlos.
+\newblock {"}why should {I} trust you?{"}: Explaining the predictions of any
+  classifier.
+\newblock In \emph{22nd {ACM} International Conference on Knowledge Discovery
+  and Data Mining}, pp.\  1135--1144. ACM, 2016{\natexlab{a}}.
+
+\bibitem[Ribeiro et~al.(2016{\natexlab{b}})Ribeiro, Singh, and
+  Guestrin]{RSG16b}
+Ribeiro, Marco~T{\'u}lio, Singh, Sameer, and Guestrin, Carlos.
+\newblock Model-agnostic interpretability of machine learning.
+\newblock \emph{CoRR}, 2016{\natexlab{b}}.
+
+\bibitem[Russakovsky et~al.(2015)Russakovsky, Deng, Su, Krause, Satheesh, Ma,
+  Huang, Karpathy, Khosla, Bernstein, Berg, and Fei-Fei]{ILSVRC15}
+Russakovsky, Olga, Deng, Jia, Su, Hao, Krause, Jonathan, Satheesh, Sanjeev, Ma,
+  Sean, Huang, Zhiheng, Karpathy, Andrej, Khosla, Aditya, Bernstein, Michael,
+  Berg, Alexander~C., and Fei-Fei, Li.
+\newblock {ImageNet Large Scale Visual Recognition Challenge}.
+\newblock \emph{International Journal of Computer Vision (IJCV)}, pp.\
+  211--252, 2015.
+
+\bibitem[Samek et~al.(2015)Samek, Binder, Montavon, Bach, and
+  M{\"{u}}ller]{SBMBM15}
+Samek, Wojciech, Binder, Alexander, Montavon, Gr{\'{e}}goire, Bach, Sebastian,
+  and M{\"{u}}ller, Klaus{-}Robert.
+\newblock Evaluating the visualization of what a deep neural network has
+  learned.
+\newblock \emph{CoRR}, 2015.
+
+\bibitem[Shapley \& Shubik(1971)Shapley and Shubik]{ShaShu71}
+Shapley, Lloyd~S. and Shubik, Martin.
+\newblock The assignment game : the core.
+\newblock \emph{International Journal of Game Theory}, 1\penalty0 (1):\penalty0
+  111--130, 1971.
+\newblock URL \url{http://dx.doi.org/10.1007/BF01753437}.
+
+\bibitem[Shrikumar et~al.(2016)Shrikumar, Greenside, Shcherbina, and
+  Kundaje]{SGSK16}
+Shrikumar, Avanti, Greenside, Peyton, Shcherbina, Anna, and Kundaje, Anshul.
+\newblock Not just a black box: Learning important features through propagating
+  activation differences.
+\newblock \emph{CoRR}, 2016.
+
+\bibitem[Shrikumar et~al.(2017)Shrikumar, Greenside, and Kundaje]{SGK17}
+Shrikumar, Avanti, Greenside, Peyton, and Kundaje, Anshul.
+\newblock Learning important features through propagating activation
+  differences.
+\newblock \emph{CoRR}, abs/1704.02685, 2017.
+\newblock URL \url{http://arxiv.org/abs/1704.02685}.
+
+\bibitem[Simonyan et~al.(2013)Simonyan, Vedaldi, and Zisserman]{SVZ13}
+Simonyan, Karen, Vedaldi, Andrea, and Zisserman, Andrew.
+\newblock Deep inside convolutional networks: Visualising image classification
+  models and saliency maps.
+\newblock \emph{CoRR}, 2013.
+
+\bibitem[Springenberg et~al.(2014)Springenberg, Dosovitskiy, Brox, and
+  Riedmiller]{SDBR14}
+Springenberg, Jost~Tobias, Dosovitskiy, Alexey, Brox, Thomas, and Riedmiller,
+  Martin~A.
+\newblock Striving for simplicity: The all convolutional net.
+\newblock \emph{CoRR}, 2014.
+
+\bibitem[Szegedy et~al.(2014)Szegedy, Liu, Jia, Sermanet, Reed, Anguelov,
+  Erhan, Vanhoucke, and Rabinovich]{SLJSRAEVR14}
+Szegedy, Christian, Liu, Wei, Jia, Yangqing, Sermanet, Pierre, Reed, Scott~E.,
+  Anguelov, Dragomir, Erhan, Dumitru, Vanhoucke, Vincent, and Rabinovich,
+  Andrew.
+\newblock Going deeper with convolutions.
+\newblock \emph{CoRR}, 2014.
+
+\bibitem[Wu et~al.(2016)Wu, Schuster, Chen, Le, Norouzi, Macherey, Krikun, Cao,
+  Gao, Macherey, Klingner, Shah, Johnson, Liu, Kaiser, Gouws, Kato, Kudo,
+  Kazawa, Stevens, Kurian, Patil, Wang, Young, Smith, Riesa, Rudnick, Vinyals,
+  Corrado, Hughes, and Dean]{Wu16}
+Wu, Yonghui, Schuster, Mike, Chen, Zhifeng, Le, Quoc~V., Norouzi, Mohammad,
+  Macherey, Wolfgang, Krikun, Maxim, Cao, Yuan, Gao, Qin, Macherey, Klaus,
+  Klingner, Jeff, Shah, Apurva, Johnson, Melvin, Liu, Xiaobing, Kaiser, Lukasz,
+  Gouws, Stephan, Kato, Yoshikiyo, Kudo, Taku, Kazawa, Hideto, Stevens, Keith,
+  Kurian, George, Patil, Nishant, Wang, Wei, Young, Cliff, Smith, Jason, Riesa,
+  Jason, Rudnick, Alex, Vinyals, Oriol, Corrado, Greg, Hughes, Macduff, and
+  Dean, Jeffrey.
+\newblock Google's neural machine translation system: Bridging the gap between
+  human and machine translation.
+\newblock \emph{CoRR}, abs/1609.08144, 2016.
+\newblock URL \url{http://arxiv.org/abs/1609.08144}.
+
+\bibitem[Yosinski et~al.(2015)Yosinski, Clune, Nguyen, Fuchs, and
+  Lipson]{YCNFL15}
+Yosinski, Jason, Clune, Jeff, Nguyen, Anh~Mai, Fuchs, Thomas, and Lipson, Hod.
+\newblock Understanding neural networks through deep visualization.
+\newblock \emph{CoRR}, 2015.
+
+\bibitem[Zeiler \& Fergus(2014)Zeiler and Fergus]{ZF14}
+Zeiler, Matthew~D. and Fergus, Rob.
+\newblock Visualizing and understanding convolutional networks.
+\newblock In \emph{ECCV}, pp.\  818--833, 2014.
+
+\end{thebibliography}

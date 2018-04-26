@@ -1,0 +1,147 @@
+\begin{thebibliography}{22}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{Achille} and {Soatto}(2016)]{2016arXiv161101353A}
+A.~{Achille} and S.~{Soatto}.
+\newblock {Information Dropout: Learning Optimal Representations Through Noisy
+  Computation}.
+\newblock \emph{ArXiv e-prints}, November 2016.
+
+\bibitem[Alain and Bengio(2016)]{probes2016}
+Guillaume Alain and Yoshua Bengio.
+\newblock Understanding intermediate layers using linear classifier probes,
+  2016.
+
+\bibitem[Balduzzi et~al.(2017)Balduzzi, Frean, Leary, Lewis, Ma, and
+  McWilliams]{DBLP:journals/corr/BalduzziFLLMM17}
+David Balduzzi, Marcus Frean, Lennox Leary, J.~P. Lewis, Kurt~Wan{-}Duo Ma, and
+  Brian McWilliams.
+\newblock The shattered gradients problem: If resnets are the answer, then what
+  is the question?
+\newblock \emph{CoRR}, abs/1702.08591, 2017.
+\newblock URL \url{http://arxiv.org/abs/1702.08591}.
+
+\bibitem[Cho et~al.(2015)Cho, Lee, Shin, Choy, and Do]{cho2015much}
+Junghwan Cho, Kyewook Lee, Ellie Shin, Garry Choy, and Synho Do.
+\newblock How much data is needed to train a medical image deep learning system
+  to achieve necessary high accuracy?
+\newblock \emph{arXiv preprint arXiv:1511.06348}, 2015.
+
+\bibitem[Cover and Thomas(2006)]{Cover:2006}
+Thomas~M. Cover and Joy~A Thomas.
+\newblock \emph{Elements of Information Theory (Wiley Series in
+  Telecommunications and Signal Processing)}.
+\newblock Wiley-Interscience, 2006.
+
+\bibitem[Geman and Geman(1988)]{geman1988stochastic}
+Stuart Geman and Donald Geman.
+\newblock Stochastic relaxation, gibbs distributions, and the bayesian
+  restoration of images, neurocomputing: foundations of research, 1988.
+
+\bibitem[Graves et~al.(2013)Graves, Mohamed, and
+  Hinton]{DBLP:journals/corr/abs-1303-5778}
+Alex Graves, Abdel-rahman Mohamed, and Geoffrey Hinton.
+\newblock Speech recognition with deep recurrent neural networks.
+\newblock In \emph{Acoustics, speech and signal processing (icassp), 2013 ieee
+  international conference on}, pages 6645--6649. IEEE, 2013.
+
+\bibitem[Haykin(1998)]{Haykin:1998:NNC:521706}
+Simon Haykin.
+\newblock \emph{Neural Networks: A Comprehensive Foundation}.
+\newblock Prentice Hall PTR, Upper Saddle River, NJ, USA, 2nd edition, 1998.
+\newblock ISBN 0132733501.
+
+\bibitem[He et~al.(2015)He, Zhang, Ren, and Sun]{DBLP:journals/corr/HeZRS15}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
+\newblock Deep residual learning for image recognition.
+\newblock \emph{CoRR}, abs/1512.03385, 2015.
+
+\bibitem[Hinton et~al.(2012)Hinton, Srivastava, Krizhevsky, Sutskever, and
+  Salakhutdinov]{DBLP:journals/corr/abs-1207-0580}
+Geoffrey~E Hinton, Nitish Srivastava, Alex Krizhevsky, Ilya Sutskever, and
+  Ruslan~R Salakhutdinov.
+\newblock Improving neural networks by preventing co-adaptation of feature
+  detectors.
+\newblock \emph{arXiv preprint arXiv:1207.0580}, 2012.
+
+\bibitem[Kadmon and Sompolinsky(2016)]{Kadmon2016OptimalAI}
+Jonathan Kadmon and Haim Sompolinsky.
+\newblock Optimal architectures in a solvable model of deep networks.
+\newblock In \emph{NIPS}, 2016.
+
+\bibitem[Kazhdan et~al.(2003)Kazhdan, Funkhouser, and
+  Rusinkiewicz]{Kazhdan2003}
+Michael Kazhdan, Thomas Funkhouser, and Szymon Rusinkiewicz.
+\newblock Rotation invariant spherical harmonic representation of 3d shape
+  descriptors.
+\newblock \emph{Eurographics Symposium on Geometry Processing}, 2003.
+
+\bibitem[Kraskov et~al.(2004)Kraskov, St\"ogbauer, and
+  Grassberger]{PhysRevE.69.066138}
+Alexander Kraskov, Harald St\"ogbauer, and Peter Grassberger.
+\newblock Estimating mutual information.
+\newblock \emph{Phys. Rev. E}, 69:\penalty0 066138, Jun 2004.
+\newblock \doi{10.1103/PhysRevE.69.066138}.
+
+\bibitem[Larochelle et~al.(2009)Larochelle, Bengio, Louradour, and
+  Lamblin]{Larochelle:2009:EST:1577069.1577070}
+Hugo Larochelle, Yoshua Bengio, J{\'e}r\^{o}me Louradour, and Pascal Lamblin.
+\newblock Exploring strategies for training deep neural networks.
+\newblock \emph{J. Mach. Learn. Res.}, 10:\penalty0 1--40, June 2009.
+\newblock ISSN 1532-4435.
+
+\bibitem[LeCun et~al.(2015)LeCun, Bengio, and Hinton]{natureDeepLeraning}
+Yann LeCun, Yoshua Bengio, and Geoffrey Hinton.
+\newblock Deep learning.
+\newblock \emph{Nature}, 2015.
+
+\bibitem[Moshkovich and Tishby(2017)]{MoshkovichTishby17}
+Michal Moshkovich and Naftali Tishby.
+\newblock Mixing complexity and its applications to neural networks.
+\newblock 2017.
+\newblock URL \url{https://arxiv.org/abs/1703.00729}.
+
+\bibitem[Paninski(2003)]{Paninski:2003:EEM:795523.795524}
+Liam Paninski.
+\newblock Estimation of entropy and mutual information.
+\newblock \emph{Neural Comput.}, 15\penalty0 (6):\penalty0 1191--1253, June
+  2003.
+\newblock ISSN 0899-7667.
+\newblock \doi{10.1162/089976603321780272}.
+
+\bibitem[Risken(1989)]{risken1989fokker}
+H.~Risken.
+\newblock \emph{The Fokker-Planck Equation: Methods of Solution and
+  Applications}.
+\newblock Number isbn{9780387504988}, lccn={89004059} in Springer series in
+  synergetics. Springer-Verlag, 1989.
+
+\bibitem[Tishby and Zaslavsky(2015)]{DBLP:journals/corr/TishbyZ15}
+Naftali Tishby and Noga Zaslavsky.
+\newblock Deep learning and the information bottleneck principle.
+\newblock In \emph{Information Theory Workshop (ITW), 2015 IEEE}, pages 1--5.
+  IEEE, 2015.
+
+\bibitem[Tishby et~al.(1999)Tishby, Pereira, and
+  Bialek]{DBLP:journals/corr/Tishby1999}
+Naftali Tishby, Fernando~C. Pereira, and William Bialek.
+\newblock The information bottleneck method.
+\newblock \emph{In Proceedings of the 37-th Annual Allerton Conference on
+  Communication, Control and Computing}, 1999.
+
+\bibitem[Zhang et~al.(2016)Zhang, Bengio, Hardt, Recht, and
+  Vinyals]{DBLP:journals/corr/ZhangBHRV16}
+Chiyuan Zhang, Samy Bengio, Moritz Hardt, Benjamin Recht, and Oriol Vinyals.
+\newblock Understanding deep learning requires rethinking generalization.
+\newblock \emph{arXiv preprint arXiv:1611.03530}, 2016.
+
+\bibitem[Zhang and LeCun(2015)]{DBLP:journals/corr/ZhangL15}
+Xiang Zhang and Yann LeCun.
+\newblock Text understanding from scratch.
+\newblock \emph{arXiv preprint arXiv:1502.01710}, 2015.
+
+\end{thebibliography}

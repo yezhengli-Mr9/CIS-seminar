@@ -1,0 +1,314 @@
+\documentclass{article}
+
+% use Times
+\usepackage{times}
+% For figures
+\usepackage{graphicx} % more modern
+%\usepackage{epsfig} % less modern
+%\usepackage{subfigure} 
+
+% For citations
+\usepackage{natbib}
+
+% For algorithms
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{amsthm}
+
+\usepackage{hyperref}
+
+% Packages hyperref and algorithmic misbehave sometimes.  We can fix
+% this with the following command.
+\newcommand{\theHalgorithm}{\arabic{algorithm}}
+
+% Employ the following version of the ``usepackage'' statement for
+% submitting the draft version of the paper for review.  This will set
+% the note in the first column to ``Under review.  Do not distribute.''i
+\usepackage{url}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{amsmath}
+\usepackage[accepted]{icml2017}
+
+%%%%%%%%%%%%%%%%%% BEGIN MACROS %%%%%%%%%%%%%%%%%%
+\newcommand{\stitle}[1]{\vspace{5pt} \noindent\textbf{#1.}\ }
+\newcommand{\todo}[1]{{\color{blue} {\bf TODO:} {\small #1}}}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{remark}{Remark}
+\newtheorem{definition}{Definition}
+
+\newcommand{\esm}[1]{\ensuremath{#1}}
+\newcommand{\mr}[1]{\esm{\mathrm{#1}}}
+\newcommand{\ms}[1]{\esm{\mathsf{#1}}}
+\newcommand{\mi}[1]{\esm{\mathit{#1}}}
+\newcommand{\mb}[1]{\esm{\mathbf{#1}}}
+\newcommand{\mathsc}[1]{{\normalfont \textsc{#1}}}
+\newcommand{\msc}[1]{\esm{\mathsc{#1}}}
+
+\newcommand\reals{\ms{R}} \newcommand\incp{\ms{Incp}}
+\newcommand\maxf{\ms{max}} \newcommand\img{\ms{img}}
+\newcommand\pimportance{\mathcal{P}}
+\newcommand\molfeatures{\ms{Features}}
+
+\newcommand\grad{\bigtriangledown}
+\newcommand\sparam{\alpha}
+\newcommand\im{\ms{img}}
+\newcommand\mol{\ms{mol}}
+\newcommand\pathfn{\gamma}
+
+\newcommand\synteq{::=}
+\newcommand\intgrads{\ms{InteriorGrads}}
+\newcommand\integratedgrads{\ms{IntegratedGrads}}
+\newcommand\pathintegratedgrads{\ms{PathIntegratedGrads}}
+\newcommand\relu{\ms{ReLU}}
+\newcommand\sigmoid{\ms{Sigmoid}}
+\newcommand\xbase{x'}
+\newcommand{\fix}{\marginpar{FIX}} \newcommand{\new}{\marginpar{NEW}}
+
+\newcommand\intpimportance{\ms{InteriorPixelImportance}}
+%%%%%%%%%%%%%%%%%% END MACROS %%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\twocolumn[
+
+\icmltitle{Axiomatic Attribution for Deep Networks}
+\icmlsetsymbol{equal}{*}
+
+\begin{icmlauthorlist}
+\icmlauthor{Mukund Sundararajan}{equal,google}
+\icmlauthor{Ankur Taly}{equal,google}
+\icmlauthor{Qiqi Yan}{equal,google}
+\end{icmlauthorlist}
+
+\icmlaffiliation{google}{Google Inc., Mountain View, USA}
+
+\icmlcorrespondingauthor{Mukund Sundararajan}{mukunds@google.com}
+\icmlcorrespondingauthor{Ankur Taly}{ataly@google.com}
+
+% You may provide any keywords that you 
+% find helpful for describing your paper; these are used to populate 
+% the "keywords" metadata in the PDF but will not be shown in the document
+\icmlkeywords{Deep Learning, Explanations, Gradients, Attribution}
+
+\vskip 0.3in
+]
+
+%\author{Mukund Sundararajan, Ankur Taly \& Qiqi Yan \\
+%Google Inc.\\
+%Mountain View, CA 94043, USA
+%\\ \texttt{\{mukunds,ataly,qiqiyan\}@google.com} \\ }
+
+% this must go after the closing bracket ] following \twocolumn[ ...
+
+% This command actually creates the footnote in the first column
+% listing the affiliations and the copyright notice.
+% The command takes one argument, which is text to display at the start of the footnote.
+% The \icmlEqualContribution command is standard text for equal contribution.
+% Remove it (just {}) if you do not need this facility.
+
+%\printAffiliationsAndNotice{}  % leave blank if no need to mention equal contribution
+\printAffiliationsAndNotice{\icmlEqualContribution} % otherwise use the standard text.
+
+\input{intro.tex}
+\input{method.tex}
+\input{eval.tex}
+\input{application.tex}
+\input{discussion.tex}
+\input{conclusion.tex}
+
+%% \section{Conclusion}
+%% We present Interior Gradients, a method for quantifying feature
+%% importance. The method can be applied to a variety of deep networks
+%% without instrumenting the network, in fact, the amount of code
+%% required is fairly tiny.  We demonstrate that it is possible to have
+%% some understanding of the performance of the network without a
+%% detailed understanding of its implementation, opening up the
+%% possibility of easy and wide application, and lowering the bar on the
+%% effort needed to debug deep networks.
+
+%% We also wonder if Interior Gradients are useful within training as a
+%% measure against saturation, or indeed in other places that gradients
+%% are used.
+
+\subsubsection*{Acknowledgments}
+We would like to thank Samy Bengio, Kedar Dhamdhere, Scott Lundberg, Amir Najmi, Kevin McCurley, Patrick Riley, Christian Szegedy, Diane Tang for their
+feedback. We would like to thank Daniel Smilkov and Federico Allocati for identifying bugs in our descriptions.
+We would like to thank our anonymous reviewers for identifying bugs, and their suggestions to improve presentation.
+
+\bibliography{paper-icml}
+\bibliographystyle{icml2017}
+%\newpage
+\appendix
+
+%% \begin{figure}[!htb]
+%%   \centering
+%%   \includegraphics[width=0.7\columnwidth]{./Figures/IntegratedGrads/img0.jpg}
+%%   \includegraphics[width=0.7\columnwidth]{./Figures/IntegratedGrads/img8.jpg}
+%%   \includegraphics[width=0.7\columnwidth]{./Figures/IntegratedGrads/img9.jpg}
+%%   \includegraphics[width=0.7\columnwidth]{./Figures/IntegratedGrads/img10.jpg}
+%%   \includegraphics[width=0.7\columnwidth]{./Figures/IntegratedGrads/img11.jpg}
+%%   \includegraphics[width=0.7\columnwidth]{./Figures/IntegratedGrads/img12.jpg}
+%%   \includegraphics[width=0.7\columnwidth]{./Figures/IntegratedGrads/img13.jpg}
+%%   \includegraphics[width=0.7\columnwidth]{./Figures/IntegratedGrads/img14.jpg}
+%%   \includegraphics[width=0.7\columnwidth]{./Figures/IntegratedGrads/img15.jpg}
+%%   \caption{\textbf{More visualizations comparing integrated gradients with gradients at the image.}
+%%     Left-to-right: original input image, label and softmax score for
+%%     the highest scoring class, visualization of integrated gradients,
+%%     visualization of gradients at the image.}\label{fig:intgrad-finalgrad-more}
+%% \end{figure}
+
+%% \begin{figure*}
+%%   \centering
+%%   \begin{subfigure}{.4\textwidth}
+%%     \centering
+%%     \includegraphics[width=0.9\textwidth]{./Figures/Saturation/mixed5b.jpg}
+%%     \caption*{Layer {\tt mixed5b}}
+%%   \end{subfigure}%
+%%   \begin{subfigure}{.4\textwidth}
+%%     \centering
+%%     \includegraphics[width=0.9\textwidth]{./Figures/Saturation/mixed4d.jpg}
+%%     \caption*{Layer {\tt mixed4d}}
+%%   \end{subfigure}
+%%   \begin{subfigure}{.4\textwidth}
+%%     \centering
+%%     \includegraphics[width=0.9\textwidth]{./Figures/Saturation/mixed4b.jpg}
+%%     \caption*{Layer {\tt mixed4b}}
+%%   \end{subfigure}%
+%%   \begin{subfigure}{.4\textwidth}
+%%     \centering
+%%     \includegraphics[width=0.9\textwidth]{./Figures/Saturation/mixed3b.jpg}
+%%     \caption*{Layer {\tt mixed3b}}
+%%   \end{subfigure}
+%%   \caption{\textbf{Saturation in intermediate layers of Inception.} For each layer we plot the
+%%     L2 and Cosine distance between the activation vector for a scaled down
+%%     image and the actual input image, with respect to the scaling parameter.
+%%     Each plot shows the trend for 30 randomly chosen images from the ImageNet
+%%     dataset. Notice that trends in all plots flatten as the scaling parameter
+%%     increases. For the deepest Inception layer {\tt mixed5b}, the Cosine distance
+%%     to the activation vector at the image is less than $0.01$ when $\sparam > 0.6$,
+%%     which is really tiny given that this layer has $50176$ neurons.}\label{fig:sat-incp-intermediate}
+%% \end{figure*}
+
+%% \begin{figure*}
+%%     \begin{center}
+%%     \begin{subfigure}{.5\textwidth}
+%%       \centering
+%%       \includegraphics[width=0.9\textwidth]{./Figures/GAS/Saturation/softmax.png}
+%%       \caption{Softmax score for task}\label{fig:sat-gas-softmax}
+%%     \end{subfigure}%
+%%     \begin{subfigure}{.5\textwidth}
+%%       \centering
+%%       \includegraphics[width=0.9\textwidth]{./Figures/GAS/Saturation/featuregrads.png}
+%%       \caption{Sum of the feature gradients}\label{fig:sat-gas-features}
+%%     \end{subfigure}
+%%   %\fbox{\rule[-.5cm]{0cm}{4cm} \rule[-.5cm]{4cm}{0cm}}
+%%   \end{center}
+%%     \caption{\textbf{Saturation in the W2N2 network (\cite{KMBPR16})}. Plots for the
+%%       softmax score for task PCBA-58834, and the sum of the feature gradients w.r.t. the same task
+%%       for twenty molecules. All molecules are active against the task}\label{fig:sat-gas}
+%% \end{figure*}
+
+\section{Proof of Theorem~\ref{thm:unique}}\label{sec:proof}
+\begin{proof}
+  Consider a non-straightline path $\pathfn:[0,1]\to \reals^n$ from baseline
+  to input.  W.l.o.g.,
+there exists $t_0\in [0,1]$ such that for two dimensions $i,j$,
+$\pathfn_i(t_0) > \pathfn_j(t_0)$.  Let $(t_1, t_2)$ be the maximum real
+open interval containing $t_0$ such that $\pathfn_i(t) > \pathfn_j(t)$
+for all $t$ in $(t_1, t_2)$, and let $a=\pathfn_i(t_1)=\pathfn_j(t_1)$,
+and $b=\pathfn_i(t_2)=\pathfn_j(t_2)$.  Define function $f:x\in
+[0,1]^n\to R$ as $0$ if $\min(x_i, x_j) \leq a$, as $(b - a)^2$ if
+$\max(x_i,x_j)\geq b$, and as $(x_i - a)(x_j-a)$ otherwise.  Next we
+compute the attributions of $f$ at $x=\langle 1,\ldots,1\rangle_n$ with
+baseline $\xbase=\langle 0,\ldots,0\rangle_n$.
+Note that $x_i$ and $x_j$ are symmetric, and should get identical
+attributions.  For $t\notin [t_1, t_2]$, the function is a constant,
+and the attribution of $f$ is zero to all variables, while for
+$t\in(t_1, t_2)$, the integrand of attribution of $f$ is $\pathfn_j(t) - a$ to
+$x_i$, and $\pathfn_i(t) - a$ to $x_j$, where the latter is always
+strictly larger by our choice of the interval. Integrating, 
+it follows that $x_j$ gets a larger attribution than $x_i$, contradiction.
+\end{proof}
+
+\section{Attribution Counter-Examples}\label{sec:examples}
+We show that the methods DeepLift and Layer-wise relevance propagation
+(LRP) break the implementation invariance axiom, and the Deconvolution
+and Guided back-propagation methods break the sensitivity axiom.
+\begin{figure}[!htb]
+  \centering
+  \begin{subfigure}{.9\columnwidth}
+    \includegraphics[width=0.9\columnwidth]{./Figures/DeepLift/network1.png}    
+    \tiny
+    \caption*{\footnotesize
+      Network $f(x_1, x_2)$\\
+      Attributions at $x_1 = 3, x_2 = 1$\\
+      $\begin{array}{ll}
+        \mbox{\bf Integrated gradients} & x_1 = 1.5,~x_2 = -0.5 \\
+        \mbox{DeepLift} & x_1 = 1.5,~x_2 = -0.5 \\
+        \mbox{LRP} & x_1 = 1.5,~x_2 = -0.5 \\
+        % \mbox{DeConvNet} & x_1 = 1.25,~x_2 = 0.75 \\
+        % \mbox{Guided backpropagation} & x_1 = 1.25,~x_2 = 0.75 \\
+       \end{array}$
+    }\label{fig:deeplift-1}
+  \end{subfigure}
+  \\
+  \begin{subfigure}{.9\columnwidth}
+    \includegraphics[width=0.9\columnwidth]{./Figures/DeepLift/network2.png}
+    \caption*{\footnotesize
+      Network $g(x_1, x_2)$\\
+      Attributions at $x_1 = 3, x_2 = 1$\\
+      $\begin{array}{ll}
+        \mbox{\bf Integrated gradients} & x_1 = 1.5,~x_2 = -0.5 \\
+        \mbox{DeepLift} &  x_1 = 2,~x_2 = -1 \\
+        \mbox{LRP} & x_1 = 2,~x_2 = -1 \\
+        % \mbox{DeConvNet} &  x_1 = 1.0,~x_2 = 1.0 \\
+        % \mbox{Guided backpropagation} & x_1 = 1.0,~x_2 = 1.0 \\
+       \end{array}$
+    }\label{fig:deeplift-2}
+  \end{subfigure}
+  \caption{\textbf{Attributions for two functionally equivalent
+      networks}. The figure shows attributions for two functionally
+    equivalent networks $f(x_1, x_2)$ and $g(x_1, x_2)$ at the input
+    $x_1 = 3,~x_2 = 1$ using integrated gradients, DeepLift
+   ~\cite{SGSK16}, and Layer-wise relevance propagation (LRP)
+   ~\cite{BMBMS16}. The reference input for Integrated gradients and
+    DeepLift is $x_1 = 0,~x_2 = 0$. All methods except integrated
+    gradients provide different attributions for the two
+    networks.}\label{fig:deeplift}
+\end{figure}
+%
+
+Figure~\ref{fig:deeplift} provides an example of
+two equivalent networks $f(x_1, x_2)$ and $g(x_1, x_2)$ for which DeepLift and LRP
+yield different attributions.
+
+First, observe that the networks $f$ and $g$ are of the form
+$f(x_1, x_2) = \relu(h(x_1, x_2))$ and $f(x_1, x_2) = \relu(k(x_1, x_2))$\footnote{
+  $\relu(x)$ is defined as $\ms{max}(x, 0)$.},
+where
+$$\begin{array}{l}
+  h(x_1, x_2) = \relu(x_1) - 1 - \relu(x_2) \\
+  k(x_1, x_2) = \relu(x_1 - 1) - \relu(x_2)
+\end{array}$$
+Note that $h$ and $k$ are not equivalent. They have different values whenever $x_1<1$.
+But $f$ and $g$ are equivalent. To prove this, suppose for contradiction that
+$f$ and $g$ are different for some $x_1,x_2$. Then it must be the case that
+$\relu(x_1) - 1 \neq \relu(x_1 - 1)$. This happens only when $x_1<1$,
+which implies that $f(x_1, x_2)=g(x_1, x_2)=0$.
+
+Now we leverage the above example to show that Deconvolution and
+Guided back-propagation break sensitivity.  Consider the network
+$f(x_1, x_2$) from Figure~\ref{fig:deeplift}.  For a fixed value of
+$x_1$ greater than $1$, the output decreases linearly as $x_2$
+increases from $0$ to $x_1 - 1$. Yet, for all inputs, Deconvolutional
+networks and Guided back-propagation results in zero attribution for
+$x_2$. This happens because for all inputs the back-propagated signal
+received at the node $\relu(x_2)$ is negative and is therefore not
+back-propagated through the $\relu$ operation (per the rules of
+deconvolution and guided back-propagation; see~\cite{SDBR14} for
+details). As a result, the feature $x_2$ receives zero attribution
+despite the network's output being sensitive to it.
+
+\end{document}

@@ -1,0 +1,8 @@
+Matching Networks for One Shot Learning [1], Oriol Vinyals, Charles Blundell, Timothy Lillicrap, Koray Kavukcuoglu, Daan Wierstra, DeepMind. This paper uses metric learning for one-shot classification.
+
+Adversarial Discriminative Domain Adaptation [2], Eric Tzeng, Judy Hoffman, Kate Saenko, Trevor Darrell, Berkeley. This paper uses a GAN-inspired procedure for extracting domain-independent features. (It was presented by Kate in a GRASP seminar last Friday.) 
+
+Alternatively, if we can cover those two papers quickly, I can do an overview of the other approaches:
+
+Meta-models that implement the learning process by having a meta-network output the weights of the classification network: Optimization as a Model for Few-Shot Learning [3], Sachin Ravi, Hugo Larochelle, Twitter.
+Robotics-oriented models learn to learn from one human demonstration: One-Shot Visual Imitation Learning via Meta-Learning [4], Chelsea Finn, Tianhe Yu, Tianhao Zhang, Pieter Abbeel, Sergey Levine, Berkeley.

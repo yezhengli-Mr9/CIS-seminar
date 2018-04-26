@@ -1,0 +1,29 @@
+\begin{thebibliography}{1}
+
+\bibitem{mythos}
+Zachary~C Lipton.
+\newblock The mythos of model interpretability.
+\newblock {\em IEEE Spectrum}, 2016.
+
+\bibitem{malioutov2013exact}
+Dmitry Malioutov and Kush Varshney.
+\newblock Exact rule learning via boolean compressed sensing.
+\newblock In {\em Proceedings of the 30th international conference on machine
+  learning}, pages 765--773, 2013.
+
+\bibitem{ribeiro2016model}
+Marco~Tulio Ribeiro, Sameer Singh, and Carlos Guestrin.
+\newblock Model-agnostic interpretability of machine learning.
+\newblock {\em arXiv preprint arXiv:1606.05386}, 2016.
+
+\bibitem{rivest1987learning}
+Ronald~L Rivest.
+\newblock Learning decision lists.
+\newblock {\em Machine learning}, 2(3):229--246, 1987.
+
+\bibitem{ustun2014methods}
+Berk Ustun and Cynthia Rudin.
+\newblock Methods and models for interpretable linear classification.
+\newblock {\em arXiv preprint arXiv:1405.4047}, 2014.
+
+\end{thebibliography}
